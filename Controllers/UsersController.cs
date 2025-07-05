@@ -58,7 +58,7 @@ namespace EmployeesManagement.Controllers
                 user.PhoneNumber = model.PhoneNumber;
                 user.PhoneNumberConfirmed = true;
                 user.CreatedOn = DateTime.Now;
-                user.CreatedById = "Macro Code";
+                user.CreatedById = "Jse Demo";
                 user.RoleId = model.RoleId;
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

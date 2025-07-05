@@ -132,7 +132,7 @@ namespace EmployeesManagement.Controllers
             }
 
             leaveApplication.ApprovedOn = DateTime.Now;
-            leaveApplication.ApprovedById = "Macro Code";
+            leaveApplication.ApprovedById = "Jse Demo";
             leaveApplication.StatusId = rejectstatus!.Id;
             leaveApplication.ApprovalNotes = leave.ApprovalNotes;
             _context.Update(leaveApplication);
@@ -335,7 +335,7 @@ namespace EmployeesManagement.Controllers
                 try
                 {
                     leaveApplication.ModifiedOn = DateTime.Now;
-                    leaveApplication.ModifiedById = "Macro Code";
+                    leaveApplication.ModifiedById = "Jse Demo";
                     leaveApplication.StatusId = pendingStatus.Id;
                     _context.Update(leaveApplication);
                     await _context.SaveChangesAsync();
